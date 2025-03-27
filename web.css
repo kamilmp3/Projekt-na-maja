@@ -1,20 +1,29 @@
-@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Gravitas+One&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
 body {
     position: relative;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    height: 100vh;
     margin: 0;
-    background-image: url('background.png');
-    background-size: cover;
-    backdrop-filter: blur(17px); /* Używa backdrop-filter do rozmycia */
-    z-index: -1; /* Ustawia tło za innymi elementami */
-    text-align: center;
     padding: 0;
-}
+    min-height: 100%;
+    text-align: center;
+    z-index: 0;
+    overflow-x: hidden; 
+  }
+
+  .bg {
+    position: fixed;
+    top: -20px;
+    left: -20px;
+    width: calc(100% + 40px);
+    height: calc(100% + 40px);
+    background: url('background.png') center/cover no-repeat;
+    filter: blur(17px);
+    z-index: -1;
+    pointer-events: none; 
+  }
+  
+  
+
+
 
 header {
     color: rgb(255, 255, 255);
@@ -24,28 +33,28 @@ header {
     font-style: normal;
 }
 
-/* Przyciski (sekcje) */
+/* Przyciski */
 .section-btn {
-    display: block; /* Przyciski w kolumnie */
+    display: block;
     width: 80%;
-    max-width: 400px; /* Maksymalna szerokość */
-    margin: 20px auto; /* Odstępy między przyciskami */
+    max-width: 400px;
+    margin: 20px auto;
     padding: 15px;
-    background: rgba(103, 172, 214, 0.281); /* Tło z przezroczystością */
+    background: rgba(103, 172, 214, 0.281);
     color: white;
     border: none;
-    border-radius: 20px; /* Zaokrąglenia */
+    border-radius: 20px;
     font-size: 15px;
     cursor: pointer;
-    transition: all 0.3s ease-in-out; /* Płynna animacja */
+    transition: all 0.3s ease-in-out;
     text-align: center;
 }
 
 /* Efekt hover dla przycisków */
 .section-btn:hover {
-    background: rgba(29, 157, 196, 0.534); /* Zmiana koloru po najechaniu */
-    transform: scale(1.05); /* Powiększenie */
-    color: rgb(255, 255, 255); /* Zmiana koloru czcionki */
+    background: rgba(29, 157, 196, 0.534);
+    transform: scale(1.05);
+    color: rgb(255, 255, 255);
 }
 
 /* Styl dla h2 i p wewnątrz przycisków */
@@ -53,6 +62,7 @@ header {
     margin: 5px;
 }
 
+/* Stopka */
 footer {
     text-align: center;
     color: rgb(248, 250, 250);
@@ -62,22 +72,21 @@ footer {
 
 /* Styl linków */
 a {
-    color: #55c9e6; /* Kolor tekstu */
-    text-decoration: none; /* Usuwa podkreślenie */
-    font-family: Arial, sans-serif; /* Ustawia czcionkę */
+    color: #55c9e6;
+    text-decoration: none;
+    font-family: Arial, sans-serif;
 }
 
 /* Efekt hover dla linków */
 a:hover {
-    color: #00ccff63; /* Kolor tekstu po najechaniu */
+    color: #00ccff63;
 }
 
-@media screen and (max-width: 1500px) {
+/* Responsywność na telefon */
+@media screen and (max-height: 900px) {
     footer {
         text-align: center;
         color: rgb(248, 250, 250);
         margin-top: -15px;
         font-size: 20px;
-    }
-    
-}
+    }}
