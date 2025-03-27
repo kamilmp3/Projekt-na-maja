@@ -1,3 +1,11 @@
 html {
   
 }
+
+h1 {
+  text-align: center;
+  font-weight: blod;
+  font-size: 50px;
+  font-family: Arial, sans-serif;
+  color: #333;
+}
