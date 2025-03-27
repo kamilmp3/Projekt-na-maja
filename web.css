@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Gravitas+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Gravitas+One&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+body {
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 100vh;
+    margin: 0;
+    background-image: url('background.png');
+    background-size: cover;
+    backdrop-filter: blur(17px); /* Używa backdrop-filter do rozmycia */
+    z-index: -1; /* Ustawia tło za innymi elementami */
+    text-align: center;
+    padding: 0;
+}
+
+header {
+    color: rgb(255, 255, 255);
+    padding: 25px;
+
+        font-family: "Gravitas One", serif;
+        font-weight: 400;
+        font-style: normal;
+}
+
+
+/* Przyciski (sekcje) */
+.section-btn {
+    display: block; /* Przyciski w kolumnie */
+    width: 80%;
+    max-width: 400px; /* Maksymalna szerokość */
+    margin: 20px auto; /* Odstępy między przyciskami */
+    padding: 15px;
+    background: rgba(103, 172, 214, 0.281);
+    color: white;
+    border: none;
+    border-radius: 20px; /* Zaokrąglenia */
+    font-size: 15px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out; /* Płynna animacja */
+    text-align: center;
+}
+
+.section-btn:hover {
+    background: rgba(29, 157, 196, 0.534); /* Zmiana koloru po najechaniu */
+    transform: scale(1.05); /* Powiększenie */
+    color: rgb(255, 255, 255); /* Zmiana koloru czcionki */
+}
+
+/* Styl dla h2 i p wewnątrz przycisków */
+.section-btn h2, .section-btn p {
+    margin: 5px;
+}
+
+footer {
+    text-align: center;
+    color: rgb(248, 250, 250);
+    margin-top: 200px;
+    font-size: 20px;
+}
+
+
+a {
+    color: #55c9e6; /* Ustawia kolor tekstu, np. ciemnoszary */
+    text-decoration: none; /* Usuwa podkreślenie */
+
+    font-family: Arial, sans-serif; /* Ustawia czcionkę */
+}
+
+/* Efekt po najechaniu */
+a:hover {
+    color: #00ccff63; /* Kolor tekstu nie zmienia się przy najechaniu */
+
+}
