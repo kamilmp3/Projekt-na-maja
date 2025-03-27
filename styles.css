@@ -2,6 +2,23 @@ html {
   
 }
 
+body {
+  background: 
+}
+
+* {
+  margin: 0;
+  padding:0;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+
 h1 {
   text-align: center;
   font-weight: blod;
