@@ -1,6 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Gravitas+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Gravitas+One&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
-
 
 body {
     position: relative;
@@ -21,12 +19,10 @@ body {
 header {
     color: rgb(255, 255, 255);
     padding: 25px;
-
-        font-family: "Gravitas One", serif;
-        font-weight: 400;
-        font-style: normal;
+    font-family: "Gravitas One", serif;
+    font-weight: 400;
+    font-style: normal;
 }
-
 
 /* Przyciski (sekcje) */
 .section-btn {
@@ -35,7 +31,7 @@ header {
     max-width: 400px; /* Maksymalna szerokość */
     margin: 20px auto; /* Odstępy między przyciskami */
     padding: 15px;
-    background: rgba(103, 172, 214, 0.281);
+    background: rgba(103, 172, 214, 0.281); /* Tło z przezroczystością */
     color: white;
     border: none;
     border-radius: 20px; /* Zaokrąglenia */
@@ -45,6 +41,7 @@ header {
     text-align: center;
 }
 
+/* Efekt hover dla przycisków */
 .section-btn:hover {
     background: rgba(29, 157, 196, 0.534); /* Zmiana koloru po najechaniu */
     transform: scale(1.05); /* Powiększenie */
@@ -63,16 +60,14 @@ footer {
     font-size: 20px;
 }
 
-
+/* Styl linków */
 a {
-    color: #55c9e6; /* Ustawia kolor tekstu, np. ciemnoszary */
+    color: #55c9e6; /* Kolor tekstu */
     text-decoration: none; /* Usuwa podkreślenie */
-
     font-family: Arial, sans-serif; /* Ustawia czcionkę */
 }
 
-/* Efekt po najechaniu */
+/* Efekt hover dla linków */
 a:hover {
-    color: #00ccff63; /* Kolor tekstu nie zmienia się przy najechaniu */
-
+    color: #00ccff63; /* Kolor tekstu po najechaniu */
 }
