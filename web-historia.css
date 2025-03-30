@@ -31,7 +31,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: #7ad3fc;
+    color: #f7fcff;
 }
 
 .content-box {
@@ -45,8 +45,11 @@ nav ul li a:hover {
 }
 
 h1, h2 {
-    color: #bbf74a;
+    color: #ffffff;
     text-align: center;
+    text-shadow: 
+    0 0 15px rgba(173, 173, 173, 0.349),
+    0 0 20px rgba(165, 165, 165, 0.61);
 }
 
 
