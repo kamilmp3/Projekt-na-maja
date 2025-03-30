@@ -5,6 +5,8 @@ body {
     background: linear-gradient(to top, rgb(0, 0, 0), rgba(108, 109, 108, 0.774));
     text-align: center;
     color: white;
+    background-attachment: fixed; /* Kluczowa właściwość! */
+    min-height: 100vh;
 }
   
   
