@@ -120,3 +120,30 @@ footer {
     0 0 15px rgba(173, 173, 173, 0.349),
     0 0 20px rgba(165, 165, 165, 0.61);
 }
+
+
+@media screen and (max-height: 950px){
+    footer {
+        text-align: center;
+        color: rgba(255, 255, 255, 0.274);
+        margin-top: -15px;
+        font-size: 20px;
+}
+
+    nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            margin-top: -40px;
+ }
+
+    nav ul li a {
+            color: rgba(255, 255, 255, 0.274);
+            text-decoration: none;
+            font-size: 19px;
+            position: relative;
+    }
+    }
