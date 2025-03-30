@@ -105,7 +105,7 @@ nav ul {
 
 
 /* Responsywność na telefon */
-@media screen and (max-height: 950px) , (max-width: 510px){
+@media screen and (max-height: 950px){
     footer {
         text-align: center;
         color: rgb(248, 250, 250);
