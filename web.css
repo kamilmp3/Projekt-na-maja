@@ -100,7 +100,15 @@ nav ul {
     background-color: #a3a3a3;
   }
 
-
+.glow-text {
+  color: #fff; /* Kolor tekstu */
+  font-size: 10px;
+  text-shadow: 
+    0 0 5px rgb(148, 148, 148), /* Poświata niebieska */
+    0 0 10px rgb(180, 180, 182),
+    0 0 15px rgba(173, 173, 173, 0.349),
+    0 0 20px rgba(165, 165, 165, 0.61);
+}
 
 
 
