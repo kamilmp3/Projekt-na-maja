@@ -85,7 +85,7 @@ nav ul {
   
   nav ul li a {
     color: rgba(255, 255, 255, 0.274);
-    text-decoration: none;
+    text-decoration: none; 
     font-size: 19px;
     position: relative;
   }
