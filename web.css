@@ -100,6 +100,8 @@ nav ul {
 
 
 
+
+
 /* Responsywność na telefon */
 @media screen and (max-height: 950px) , (max-width: 510px){
     footer {
@@ -126,7 +128,5 @@ nav ul {
             position: relative;
     }
     }
-
-
 
     
