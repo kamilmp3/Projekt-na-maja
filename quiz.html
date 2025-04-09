@@ -3,30 +3,89 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quiz o maszynach liczących</title>
-    <link rel="stylesheet" href="web.css">
+    <title>Quiz! - Sprawdz swoją wiedze</title>
+    <link rel="stylesheet" href="page.css">
+    <script src="QUIZ.js"></script>
     <link rel="icon" href="zsz2.png" type="image/png">
 </head>
 <body>
+
+        <h3 class="glow-text">Quiz - Sprawdz swoją wiedze!</h3>
     <header>
-        <h1>Quiz: Sprawdź swoją wiedzę!</h1>
         <nav>
             <ul>
-                <li><a href="index.html">Strona główna</a></li>
+                <li><a id="nav" href="https://kamilmp3.github.io/Projekt-na-maja">Główna</a></li>
+                <li><a id="nav" href="historia.html">Historia</a></li>
+                <li><a id="nav" href="komputery.html">Komputery</a></li>
+                <li><a id="nav" href="AI.html">AI</a></li>
+                <li><a id="nav" href="info.html">Info</a></li>
             </ul>
         </nav>
     </header>
 
-    <section id="quiz">
-        <h2>Quiz: Sprawdź swoją wiedzę!</h2>
-        <button onclick="startQuiz()">Rozpocznij Quiz</button>
-        <div id="quiz-container"></div>
-    </section>
+    <main>
+        <article class="content-box">
+            <h2>🧠 Quiz: Sprawdź czego sie dowiedziałes!</h2>
+            <form name="quizForm" onsubmit="checkQuiz(); return false;">
+                <div class="quiz-question">
+                    <p><b>1. Kto zaproponował test badający zdolność maszyny do myślenia?</b></p>
+                    <label><input type="radio" name="q1" value="1"> Alan Turing</label>
+                    <label><input type="radio" name="q1" value="0"> Ada Lovelace</label>
+                    <label><input type="radio" name="q1" value="0"> Blaise Pascal</label>
+                </div>
+        
+                <div class="quiz-question">
+                    <p><b>2. Co było pierwszą maszyną liczącą?</b></p>
+                    <label><input type="radio" name="q2" value="1"> Abakus</label>
+                    <label><input type="radio" name="q2" value="0"> Komputer ENIAC</label>
+                    <label><input type="radio" name="q2" value="0"> Z3</label>
+                </div>
+        
+                <div class="quiz-question">
+                    <p><b>3. Jaki komputer był pierwszym osobistym PC od IBM?</b></p>
+                    <label><input type="radio" name="q3" value="1"> IBM 5150</label>
+                    <label><input type="radio" name="q3" value="0"> IBM 1401</label>
+                    <label><input type="radio" name="q3" value="0"> DEC PDP-1</label>
+                </div>
+        
+                <div class="quiz-question">
+                    <p><b>4. Kto stworzył pierwszy programowalny komputer?</b></p>
+                    <label><input type="radio" name="q4" value="1"> Konrad Zuse</label>
+                    <label><input type="radio" name="q4" value="0"> Steve Jobs</label>
+                    <label><input type="radio" name="q4" value="0"> Bill Gates</label>
+                </div>
+        
+                <div class="quiz-question">
+                    <p><b>5. Co oznacza skrót AI?</b></p>
+                    <label><input type="radio" name="q5" value="0"> Automated Interface</label>
+                    <label><input type="radio" name="q5" value="1"> Artificial Intelligence</label>
+                    <label><input type="radio" name="q5" value="0"> Advanced Information</label>
+                </div>
 
+                <div class="quiz-question">
+                    <p><b>6. Ktore z poniższych zajeć Sztuczna Inteligęcja nie potrafi?</b></p>
+                    <label><input type="radio" name="q6" value="0"> tworzyć muzyke</label>
+                    <label><input type="radio" name="q6" value="0"> tworzyć programy</label>
+                    <label><input type="radio" name="q6" value="1"> Zrozumienie kontekstu i ironii</label>
+                    <label><input type="radio" name="q6" value="0"> Rozpoznawanie mowy i tłumaczenia</label>
+                    <label><input type="radio" name="q6" value="0"> Uczenie się</label>
+                </div>
+
+                <div class="quiz-question">
+                    <p><b>7. Kiedy powstal 1 komputer (PC - Personal Computer)?</b></p>
+                    <label><input type="radio" name="q7" value="0"> 1985</label>
+                    <label><input type="radio" name="q7" value="1"> 1981</label>
+                    <label><input type="radio" name="q7" value="0"> 1976</label>
+                </div>
+                <div id="result" class="glow-text" style="margin-top: 20px; font-size: 24px;"></div>
+                <button type="submit">Sprawdź wynik </button>
+                </from>
+        </article>
+    </main>    
+    
     <footer>
-        <p>&copy; Write by kamilmp3334 with 💕</p>
+        <button onclick="window.location.reload();">Spróbuj jeszcze raz</button>
+        <p><b> ᴡʀɪᴛᴇ ʙʏ <a href="https://github.com/kamilmp3">kamilmp3</a> ᴡɪᴛʜ 💕</b></p>
     </footer>
-
-    <script src="web.js"></script>
 </body>
 </html>
