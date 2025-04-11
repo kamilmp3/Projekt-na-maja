@@ -5,11 +5,9 @@ body {
     background: linear-gradient(to top, rgb(0, 0, 0), rgba(108, 109, 108, 0.774));
     text-align: center;
     color: white;
-    background-attachment: fixed; /* Kluczowa właściwość! */
+    background-attachment: fixed;
     min-height: 100vh;
 }
-  
-  
 
 header {
     color: rgb(255, 255, 255);
@@ -19,9 +17,7 @@ header {
     font-style: normal;
 }
 
-/* Przyciski */
 .button {
-
     display: block;
     width: 80%;
     max-width: 400px;
@@ -35,22 +31,18 @@ header {
     cursor: pointer;
     transition: all 0.5s ease-in-out;
     text-align: center;
-
 }
 
-/* Efekt hover dla przycisków */
 .button:hover {
     background: rgba(83, 83, 83, 0.534);
     transform: scale(1.10);
     color: rgb(255, 255, 255);
 }
 
-/* Styl dla h2 i p wewnątrz przycisków */
 .button h2, .button p {
     margin: 5px;
 }
 
-/* Stopka */
 footer {
     text-align: center;
     color: rgb(248, 250, 250);
@@ -58,20 +50,15 @@ footer {
     font-size: 20px;
 }
 
-/* Styl linków */
 a {
     color: #93ffed;
     text-decoration: none;
     font-family: Arial, sans-serif;
 }
 
-/* Efekt hover dla linków */
 a:hover {
     color: #ffffff;
 }
-
-
-
 
 nav ul {
     list-style-type: none;
@@ -81,78 +68,46 @@ nav ul {
     justify-content: center;
     gap: 50px;
     margin-top: -40px;
-  }
-  
-  nav ul li a {
+}
+
+nav ul li a {
     color: rgba(255, 255, 255, 0.274);
-    text-decoration: none; 
+    text-decoration: none;
     font-size: 19px;
     position: relative;
-  }
-  
-  nav ul li a:hover::after {
+}
+
+nav ul li a:hover::after {
     content: "";
     position: absolute;
     left: 0;
     bottom: -5px;
     width: 100%;
     height: 3px;
-    background-color: #a3a3a3;
-  }
+    background-color: #ffffff;
+}
 
 .glow-text {
-  color: #fff; /* Kolor tekstu */
-  text-shadow: 
-    0 0 5px rgb(148, 148, 148), /* Poświata niebieska */
-    0 0 10px rgb(180, 180, 182),
-    0 0 15px rgba(173, 173, 173, 0.349),
-    0 0 20px rgba(165, 165, 165, 0.61);
+    color: #fff;
+    text-shadow: 
+        0 0 5px rgb(148, 148, 148),
+        0 0 10px rgb(180, 180, 182),
+        0 0 15px rgba(173, 173, 173, 0.349),
+        0 0 20px rgba(165, 165, 165, 0.61);
 }
 
-
-/* Responsywność na telefon */
-@media screen and (max-height: 950px){
+@media screen and (max-height: 950px) {
     footer {
-        text-align: center;
-        color: rgb(248, 250, 250);
         margin-top: -15px;
         font-size: 19px;
-}
+    }
 
     nav ul {
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            justify-content: center;
-            gap: 16px;
-            margin-top: -40px;
- }
+        gap: 16px;
+        margin-top: -40px;
+    }
 
     nav ul li a {
-            color: rgba(255, 255, 255, 0.274);
-            text-decoration: none;
-            font-size: 16px;
-            position: relative;
+        font-size: 16px;
     }
-    nav ul li a:hover::after {
-            content: "";
-            position: absolute;
-            left: 0;
-            bottom: -5px;
-            width: 100%;
-            height: 3px;
-            background-color: #a3a3a3;
-  }}
-
-    
-    nav ul li a:hover::after {
-        content: "";
-        position: absolute;
-        left: 0;
-        bottom: -5px;
-        width: 100%;
-        height: 3px;
-        background-color: #ffffff;
-      }
-      
+}
